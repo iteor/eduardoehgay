@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALVAMAR Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>SALVAMAR</h1>
+        <form id="loginForm">
+            <label for="username">Matrícula</label>
+            <input type="text" id="username" name="username" maxlength="6" value="813686" required>
+            <label for="password">Senha</label>
+            <input type="text" id="password" name="password" maxlength="6" value="360814" required>
+            <label for="hora">Hora</label>
+            <input type="text" id="hora" name="hora" maxlength="8" value="05:59:50" placeholder="HH:MM:SS" required>
+
+            <div class="checkboxes">
+                <div class="left-column">
+                    <label><input type="checkbox" name="location" value="Armacao I"> Armação I</label>
+                    <label><input type="checkbox" name="location" value="Artista I"> Artista I</label>
+                    <label><input type="checkbox" name="location" value="Corsario I"> Corsário I</label>
+                    <label><input type="checkbox" name="location" value="Pituacu I"> Pituaçu I</label>
+                    <label><input type="checkbox" name="location" value="Patamares I"> Patamares I</label>
+                </div>
+                <div class="right-column">
+                    <label><input type="checkbox" name="location" value="Armacao II"> Armação II</label>
+                    <label><input type="checkbox" name="location" value="Artista II"> Artista II</label>
+                    <label><input type="checkbox" name="location" value="Corsario II"> Corsário II</label>
+                    <label><input type="checkbox" name="location" value="Pituacu II"> Pituaçu II</label>
+                    <label><input type="checkbox" name="location" value="Patamares II"> Patamares II</label>
+                </div>
+            </div>
+
+            <button type="submit">Ir</button>
+        </form>
+    </div>
+
+    <div class="clock" id="clock"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
